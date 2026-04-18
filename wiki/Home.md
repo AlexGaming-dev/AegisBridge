@@ -1,27 +1,26 @@
 # AegisBridge OS Guard Wiki
 
-Willkommen im offiziellen Projekt-Wiki von AegisBridge OS Guard.
+Welcome to the official AegisBridge OS Guard wiki.
 
-## Kurzueberblick
+## Overview
 
-AegisBridge OS Guard ist eine Windows-basierte Electron-Anwendung fuer Monitoring, Readiness-Auswertung und sichere Diagnostik-Workflows.
+AegisBridge OS Guard is a Windows desktop app for endpoint posture visibility and safe diagnostics workflows.
 
-## Schnellnavigation
+## Quick Navigation
 
 - [Getting Started](Getting-Started)
-- [Architecture](Architecture)
+- [Product Overview](Architecture)
 - [Security Model](Security-Model)
 - [Diagnostics Workflow](Diagnostics-Workflow)
-- [Release Process](Release-Process)
+- [Releases and Safety](Release-Process)
 - [Troubleshooting](Troubleshooting)
 - [FAQ](FAQ)
 
-## Zielgruppen
+## Audience
 
-- Entwickler
-- Maintainer
-- Security Reviewer
-- QA und Support
+- Security operators
+- IT support teams
+- End users and testers
 
 ## Repository
 

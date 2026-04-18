@@ -1,4 +1,4 @@
-title: "[Idee] "
+title: "[Idea] "
 labels:
   - idea
 body:
@@ -6,20 +6,20 @@ body:
     id: problem
     attributes:
       label: Problem
-      description: Welches Problem soll geloest werden?
-      placeholder: Beschreibe den aktuellen Schmerzpunkt.
+      description: What problem should be solved?
+      placeholder: Describe the current pain point.
     validations:
       required: true
   - type: textarea
     id: solution
     attributes:
-      label: Vorschlag
-      description: Wie sollte die Loesung aussehen?
-      placeholder: Beschreibe die gewuenschte Funktion.
+      label: Proposal
+      description: What should the solution look like?
+      placeholder: Describe the requested capability.
     validations:
       required: true
   - type: textarea
     id: impact
     attributes:
-      label: Nutzen
-      description: Welchen Mehrwert bringt das fuer Nutzer oder Entwickler?
+      label: Impact
+      description: What value does this provide for users or contributors?
