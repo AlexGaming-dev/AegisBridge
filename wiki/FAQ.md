@@ -1,16 +1,16 @@
 # FAQ
 
-## Warum erscheint eine SAC-Warnung?
-Ohne Code-Signing und etablierte Reputation stuft Windows neue Binaries restriktiver ein.
+## Why do I see a Smart App Control / SmartScreen warning?
+Windows is stricter with new or unsigned binaries that do not yet have strong reputation.
 
-## Kann ich ohne Zertifikat releasen?
-Ja, technisch moeglich, aber mit erhoehter Warn-/Blockwahrscheinlichkeit.
+## How can I decide whether a release is safe?
+Use official GitHub releases, review notes, and verify integrity metadata (for example SHA-256) if provided.
 
-## Wo melde ich Bugs?
-Im Issue-Tracker: https://github.com/AlexGaming-Dev/AegisBridge/issues
+## Where do I report bugs?
+Issue tracker: https://github.com/AlexGaming-Dev/AegisBridge/issues
 
-## Wo diskutiere ich Ideen?
-In Discussions: https://github.com/AlexGaming-Dev/AegisBridge/discussions
+## Where can I discuss ideas?
+Discussions: https://github.com/AlexGaming-Dev/AegisBridge/discussions
 
-## Wo liegt die Security-Richtlinie?
-Im Root des Repos unter `SECURITY.md`.
+## Where is the security policy?
+In the repository root at `SECURITY.md`.

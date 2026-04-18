@@ -1,47 +1,31 @@
 # Getting Started
 
-## Voraussetzungen
+## Requirements
 
 - Windows 10/11
-- Node.js 20+
-- npm 10+
+- Internet access for downloading releases
+- Local admin rights if your environment requires them for app installation
 
-## Installation
+## Install
 
-```powershell
-npm install
-```
+1. Go to: https://github.com/AlexGaming-Dev/AegisBridge/releases
+2. Download the newest installer (`AegisBridge-Setup-*.exe`).
+3. Run the installer.
+4. Start **AegisBridge OS Guard**.
 
-## Entwicklung starten
+## First Launch
 
-```powershell
-npm start
-```
+- Open the dashboard and verify status tiles load.
+- Run a diagnostics check from **Run Diagnostics**.
+- Select an ISO file when prompted.
+- Review the status output in the UI.
 
-## Linting
+## Updating
 
-```powershell
-npm run lint
-```
+- Install the newest release over your current version.
+- Review release notes for behavior changes.
 
-## Windows-Installer bauen
+## Notes for Managed Environments
 
-```powershell
-npm run build:win
-```
-
-## Signierter Build (optional)
-
-```powershell
-$env:CSC_LINK="C:\certs\signing.pfx"
-$env:CSC_KEY_PASSWORD="your-password"
-npm run build:win:signed
-```
-
-## Projektstruktur
-
-- `src/main`: Electron Main Process und Preload
-- `src/renderer`: Desktop-UI
-- `assets`: Icons und statische Medien
-- `build`: Packaging Hooks
-- `.github`: CI und Community-Konfiguration
+- If SmartScreen or SAC warns, verify you downloaded from the official releases page.
+- Prefer releases that include integrity and trust metadata.

@@ -5,14 +5,14 @@ body:
   - type: textarea
     id: question
     attributes:
-      label: Frage
-      description: Stelle deine Frage so konkret wie moeglich.
-      placeholder: Was genau funktioniert nicht oder ist unklar?
+      label: Question
+      description: Ask your question as clearly and specifically as possible.
+      placeholder: What is not working or unclear?
     validations:
       required: true
   - type: textarea
     id: context
     attributes:
-      label: Kontext
-      description: Technische Details (OS, Version, Logs, Schritte).
-      placeholder: Relevante Informationen zur Reproduktion oder Umgebung.
+      label: Context
+      description: Technical details (OS, version, logs, steps).
+      placeholder: Relevant details for reproduction or environment.

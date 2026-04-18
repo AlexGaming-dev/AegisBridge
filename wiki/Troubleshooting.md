@@ -1,26 +1,25 @@
 # Troubleshooting
 
-## Electron-Icon statt App-Icon
+## Generic Electron Icon Instead of App Icon
 
-- Alte Taskleisten-Verknuepfung entfernen
-- Neueste Setup-Version installieren
-- App starten und neu anheften
-- Bei Bedarf Icon-Cache erneuern
+- Remove old taskbar shortcuts.
+- Install the latest setup version.
+- Launch the app and pin it again.
+- Refresh the icon cache if needed.
 
-## SAC/SmartScreen blockiert Installer
+## Smart App Control / SmartScreen Blocks Installer
 
-- Unsignierte Builds werden haeufig blockiert
-- Fuer breite Verteilung signierte Builds nutzen
+- Unsigned builds are more likely to be blocked.
+- Prefer signed releases for wider rollout.
 
-## Build-Fehler bei electron-builder
+## Installer Does Not Start
 
-- `npm install` erneut ausfuehren
-- Node-Version pruefen (>=20)
-- Build-Output in `dist/` und Workflow-Logs pruefen
+- Confirm the installer came from the official releases page.
+- Re-download the installer to rule out a corrupted file.
+- Verify integrity metadata (for example SHA-256) when provided.
 
-## Lint-Fehler
+## Diagnostics Fails
 
-```powershell
-npm run lint
-npm run lint:fix
-```
+- Confirm the selected ISO file exists and is accessible.
+- Retry with local files (not network locations).
+- Open an issue if the error persists: https://github.com/AlexGaming-Dev/AegisBridge/issues

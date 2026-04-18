@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Download resources and setup channels for AegisBridge OS Guard."
+      content="Download AegisBridge OS Guard — official Windows installer for endpoint monitoring and diagnostics."
     />
     <title>AegisBridge OS Guard | Download</title>
     <link rel="icon" href="../assets/icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
@@ -25,61 +31,66 @@
         </div>
       </nav>
       <div class="container">
-        <p class="kicker">Distribution</p>
-        <h1>Installer packages and deployment channels.</h1>
+        <p class="kicker">Download</p>
+        <h1>Get AegisBridge OS Guard for Windows.</h1>
       </div>
     </header>
 
     <main class="container section-stack">
-      <section class="card reveal">
-        <h2>Windows Desktop App</h2>
+      <article class="card reveal">
+        <h2>Windows Desktop Installer</h2>
         <p>
-          End users can download the installer directly. No source code checkout is
-          required.
+          Download the installer and run it on your Windows machine. No source code or
+          developer tools required.
         </p>
         <div class="download-cta">
           <a class="btn primary" href="files/AegisBridge-OS-Guard-Setup.exe" download>
             Download Windows Installer (.exe)
           </a>
         </div>
-        <p><strong>File:</strong> AegisBridge-OS-Guard-Setup.exe</p>
-      </section>
+        <p class="app-note">File: <code>AegisBridge-OS-Guard-Setup.exe</code></p>
+      </article>
 
-      <section class="card reveal">
-        <h2>Windows Installer Media Path</h2>
+      <article class="card reveal">
+        <h2>Is This Release Safe?</h2>
         <p>
-          If your organization provides official installer media, store it in the following
-          folder:
+          Before installing, verify you have the official release:
         </p>
-        <p><code>assets/windows-installer/11/installer.iso</code></p>
+        <ul>
+          <li>
+            Download only from this page or the official
+            <a href="https://github.com/AlexGaming-Dev/AegisBridge/releases" target="_blank" rel="noopener">
+              GitHub Releases
+            </a> page.
+          </li>
+          <li>Review the release notes for expected behavior and known limitations.</li>
+          <li>Verify the file checksum (SHA-256) against published values when available.</li>
+          <li>Prefer signed installers in production and managed environments.</li>
+        </ul>
+      </article>
+
+      <article class="card warning reveal">
+        <h2>SmartScreen / Smart App Control</h2>
         <p>
-          The media file itself is not included in this repository.
+          Windows may display a SmartScreen or Smart App Control prompt for unsigned or new
+          binaries. This is normal behavior. If you see a warning, verify that the installer
+          came from the official releases page before proceeding.
         </p>
-      </section>
-
-      <section class="card reveal">
-        <h2>Internal Build Command</h2>
-        <p>This command is for maintainers, not for end users:</p>
-        <p><code>npm run build:win</code></p>
-      </section>
-
-      <section class="card reveal">
-        <h2>CLI Validation Example</h2>
-        <p>From the installer folder, run directory validation:</p>
-        <p><code>dir</code></p>
-      </section>
-
-      <section class="card warning reveal">
-        <h2>Unsupported Command Workflows</h2>
-        <p>
-          Commands intended to bypass platform security or hardware requirements are
-          intentionally excluded from this documentation.
-        </p>
-      </section>
+      </article>
     </main>
 
-    <footer class="container footer">
-      <p>AegisBridge OS Guard | Download</p>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a class="footer-brand" href="../index.html">AegisBridge OS Guard</a>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="../index.html">About</a>
+          <a href="../docs/index.html">Documentation</a>
+          <a href="https://github.com/AlexGaming-Dev/AegisBridge">GitHub</a>
+          <a href="https://github.com/AlexGaming-Dev/AegisBridge/wiki">Wiki</a>
+          <a href="https://github.com/AlexGaming-Dev/AegisBridge/issues">Issues</a>
+        </nav>
+        <p class="footer-meta">&copy; AegisBridge OS Guard contributors</p>
+      </div>
     </footer>
 
     <script src="../script.js"></script>

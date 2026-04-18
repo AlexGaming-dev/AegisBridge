@@ -2,102 +2,52 @@
 
 ![Project Logo Placeholder](assets/logo.svg)
 
-Enterprise-ready Electron desktop application for monitoring endpoint posture and running safe diagnostics workflows.
+Desktop app for Windows endpoint monitoring and safe diagnostics workflows.
 
-## Features
+## What You Can Do
 
-- Monitoring Dashboard
-  - Live endpoint count, latency, readiness, policy status, and memory telemetry.
-- Diagnostics Bypass Workflow
-  - Controlled diagnostics routine with ISO selection and read-only validation path.
-- Windows Baseline Visibility
-  - TPM and Secure Boot checks surfaced in a single operator view.
-- Secure Desktop Bridge
-  - Context-isolated IPC via preload with minimal exposed API.
+- View endpoint readiness and status in one dashboard.
+- Run diagnostics in a controlled, read-only workflow.
+- Check TPM and Secure Boot visibility for Windows baselines.
+- Review clear status indicators for operator decisions.
 
-## Project Structure
+## Who This Is For
 
-```text
-.
-|-- .github/
-|   |-- ISSUE_TEMPLATE/
-|   |-- workflows/
-|-- assets/
-|-- build/
-|   |-- after-pack.js
-|-- docs/
-|-- download/
-|-- src/
-|   |-- main/
-|   |   |-- main.js
-|   |   |-- preload.js
-|   |-- renderer/
-|       |-- app.html
-|       |-- app.js
-|-- index.html
-|-- script.js
-|-- styles.css
-|-- eslint.config.js
-|-- SECURITY.md
-|-- package.json
-```
+Security operators, support teams, and users who need endpoint posture visibility and safe diagnostics.
 
-## Quick Start
+## Install and Start
 
-### Prerequisites
+1. Open the official Releases page:
+   - https://github.com/AlexGaming-Dev/AegisBridge/releases
+2. Download the latest installer (`AegisBridge-Setup-*.exe`).
+3. Run the installer and complete setup.
+4. Launch **AegisBridge OS Guard** from the Start menu.
 
-- Node.js 20+
-- npm 10+
-- Windows (for native installer build)
+## What a Release Looks Like
 
-### Install
+- Installer executable (`.exe`) for Windows.
+- Release notes describing changes and known limitations.
+- Optional integrity details (for example checksums) when published.
 
-```powershell
-npm install
-```
+## How to Check if a Release Is Safe
 
-### Run in Development
+Before installing:
 
-```powershell
-npm start
-```
-
-### Lint
-
-```powershell
-npm run lint
-```
-
-### Build Windows Installer
-
-```powershell
-npm run build:win
-```
-
-## Release and CI
-
-- GitHub Actions workflow: .github/workflows/build.yml
-- Trigger: on GitHub Release publication
-- Output artifact: NSIS setup executable (*.exe)
-
-## Security
-
-See SECURITY.md for reporting procedures, secure build guidance, and trust model notes.
+- Download only from the official GitHub Releases page.
+- Prefer releases that include clear release notes and integrity metadata.
+- Verify the installer hash if SHA-256 values are published.
+- On Windows, review SmartScreen/SAC prompts before allowing execution.
+- Do not run installers from mirrors or unknown links.
 
 ## Community
 
 - Discussions: https://github.com/AlexGaming-Dev/AegisBridge/discussions
 - Wiki: https://github.com/AlexGaming-Dev/AegisBridge/wiki
-- Contributing guide: CONTRIBUTING.md
-- Wiki source pages in repository: wiki/
+- Issues: https://github.com/AlexGaming-Dev/AegisBridge/issues
 
-### Publish Wiki Content
+## Security Policy
 
-After enabling Wikis in GitHub repository settings, publish the local wiki pages with:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\publish-wiki.ps1
-```
+See `SECURITY.md` for vulnerability reporting and hardening notes.
 
 ## License
 

@@ -1,19 +1,19 @@
 # Diagnostics Workflow
 
-## Ziel
+## Goal
 
-Sichere Auswertung von ISO-bezogenen Informationen, ohne Setup-Befehle auszufuehren.
+Safely inspect ISO-related information without running setup commands.
 
-## Ablauf
+## Steps
 
-1. Benutzer startet "Run Diagnostics".
-2. ISO-Datei wird ueber Datei-Dialog ausgewaehlt.
-3. App validiert Dateiexistenz und liest Metadaten.
-4. Optionaler Mount-Probe liest nur Verzeichnisstruktur.
-5. Ergebnis wird als Status im UI angezeigt.
+1. Select **Run Diagnostics** in the app.
+2. Choose an ISO file in the file dialog.
+3. The app validates file presence and reads metadata.
+4. Optional mount probing reads structure information in read-only mode.
+5. The UI shows status and result details.
 
-## Sicherheitsaspekte
+## Safety Properties
 
-- Keine automatische Installation
-- Keine Persistenz sensibler Pfaddaten in externen Logs
-- Fehlerbehandlung mit sicheren Defaults
+- No automatic software installation
+- No external persistence of sensitive path details by default
+- Safe-default error handling

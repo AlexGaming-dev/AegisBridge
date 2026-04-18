@@ -1,28 +1,28 @@
 # Security Model
 
-## Prinzipien
+## Principles
 
 - Least Privilege
 - Context Isolation
-- Keine direkte Node-Integration im Renderer
-- Explizite IPC-Schnittstellen
+- No direct Node integration in the renderer
+- Explicit IPC interfaces
 
-## Electron-Sicherheitsrelevante Defaults
+## Electron Security Defaults
 
 - `contextIsolation: true`
 - `nodeIntegration: false`
 - `sandbox: true`
 
-## Betriebssicherheit
+## Operational Safety
 
-- Signierte Releases empfohlen
-- Sensible Dateien (z. B. Zertifikate) nie committen
-- Regelmaessige Dependency-Updates
+- Signed releases are recommended
+- Sensitive files (for example certificates) must never be committed
+- Dependencies should be updated regularly
 
-## SAC / SmartScreen Hinweis
+## Smart App Control / SmartScreen Note
 
-Ohne Code Signing (OV/EV) ist mit Warnungen oder Blockierungen durch Smart App Control/SmartScreen zu rechnen.
+Without code signing (OV/EV), Smart App Control / SmartScreen warnings or blocks are more likely.
 
 ## Vulnerability Reporting
 
-Siehe `SECURITY.md` im Hauptrepository.
+See `SECURITY.md` in the main repository.

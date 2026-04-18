@@ -5,7 +5,7 @@
 - [Architecture](Architecture)
 - [Security Model](Security-Model)
 - [Diagnostics Workflow](Diagnostics-Workflow)
-- [Release Process](Release-Process)
+- [Releases and Safety](Release-Process)
 - [Troubleshooting](Troubleshooting)
 - [FAQ](FAQ)
 

@@ -1,22 +1,20 @@
-# Release Process
+# Releases and Safety
 
-## Lokale Vorbereitung
+## What a Release Contains
 
-```powershell
-npm install
-npm run lint
-npm run build:win
-```
+- Windows installer (`AegisBridge-Setup-*.exe`)
+- Release notes
+- Optional integrity metadata (for example SHA-256 checksums)
 
-## GitHub Release
+## Official Source
 
-1. Tag erstellen und pushen.
-2. GitHub Release publizieren.
-3. Workflow `.github/workflows/build.yml` baut den Installer.
-4. Build-Artefakte in Actions pruefen.
+Only trust releases published on:
+- https://github.com/AlexGaming-Dev/AegisBridge/releases
 
-## Empfehlung fuer Production
+## Safety Checklist Before Installation
 
-- Signierte Builds veroeffentlichen
-- SHA-256 Checksums bereitstellen
-- Changelog und Upgrade-Hinweise pflegen
+- Confirm the release is from the official repository.
+- Review release notes for expected behavior and known issues.
+- Verify checksums when available.
+- Prefer signed installers for production environments.
+- Keep a rollback installer available in managed environments.

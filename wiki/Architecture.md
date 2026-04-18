@@ -1,31 +1,26 @@
-# Architecture
+# Product Overview
 
-## Komponenten
+## Main Components
 
 1. Main Process (`src/main/main.js`)
 2. Preload Bridge (`src/main/preload.js`)
 3. Renderer UI (`src/renderer/app.html`, `src/renderer/app.js`)
 
-## Main Process Verantwortung
+## What This Means for Users
 
-- Fensterinitialisierung und App-Lifecycle
-- IPC-Handler fuer Metrics und Diagnostics
-- Plattformnahe Operationen via PowerShell
+- The app has a clear separation between UI and system operations.
+- Diagnostics actions are routed through controlled interfaces.
+- Direct system-level execution from the UI is restricted.
 
-## Preload Verantwortung
+## Why This Design Is Safer
 
-- Sichere, minimierte API fuer Renderer
-- Trennung von Node- und Browser-Kontext
+- The renderer runs with limited privileges.
+- The preload bridge exposes only a minimal API.
+- Isolation reduces the attack surface in desktop runtime contexts.
 
-## Renderer Verantwortung
+## Data Flow
 
-- Visualisierung der Metriken
-- Statusanzeigen und User Actions
-- Trigger fuer Diagnostics-Lauf
-
-## Datenfluss
-
-1. Renderer ruft API ueber `window.aegisbridge` auf.
-2. Preload leitet an IPC Main weiter.
-3. Main Process sammelt Daten und antwortet.
-4. Renderer aktualisiert UI deterministisch.
+1. The UI requests data through `window.aegisbridge`.
+2. The preload bridge forwards the request via IPC.
+3. The main process gathers data and responds.
+4. The UI updates status and diagnostics output.
