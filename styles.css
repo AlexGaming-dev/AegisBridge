@@ -76,7 +76,7 @@ a {
 }
 
 code {
-  font-family: "JetBrains Mono", "IBM Plex Mono", "Courier New", monospace;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
   font-size: 0.875em;
   background: var(--surface-alt);
   border: 1px solid var(--border);
