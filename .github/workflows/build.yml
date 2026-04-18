@@ -6,6 +6,8 @@ on:
 
 permissions:
   contents: read
+  id-token: write
+  attestations: write
 
 jobs:
   build-windows:
@@ -35,5 +37,12 @@ jobs:
         with:
           name: windows-installer
           path: |
+            dist/*.exe
+            dist/*.blockmap
+
+      - name: Attest Build Provenance
+        uses: actions/attest-build-provenance@v4.1.0
+        with:
+          subject-path: |
             dist/*.exe
             dist/*.blockmap
