@@ -1,0 +1,25 @@
+title: "[Idee] "
+labels:
+  - idea
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Welches Problem soll geloest werden?
+      placeholder: Beschreibe den aktuellen Schmerzpunkt.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Vorschlag
+      description: Wie sollte die Loesung aussehen?
+      placeholder: Beschreibe die gewuenschte Funktion.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Nutzen
+      description: Welchen Mehrwert bringt das fuer Nutzer oder Entwickler?

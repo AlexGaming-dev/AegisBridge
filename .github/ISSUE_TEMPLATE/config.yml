@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Community Discussions
+    url: https://github.com/AlexGaming-Dev/AegisBridge/discussions
+    about: Nutze Discussions fur Fragen, Ideen und allgemeine Community-Themen.
+  - name: Project Wiki
+    url: https://github.com/AlexGaming-Dev/AegisBridge/wiki
+    about: Lies und erweitere die Projektdokumentation im Wiki.

@@ -84,6 +84,21 @@ npm run build:win
 
 See SECURITY.md for reporting procedures, secure build guidance, and trust model notes.
 
+## Community
+
+- Discussions: https://github.com/AlexGaming-Dev/AegisBridge/discussions
+- Wiki: https://github.com/AlexGaming-Dev/AegisBridge/wiki
+- Contributing guide: CONTRIBUTING.md
+- Wiki source pages in repository: wiki/
+
+### Publish Wiki Content
+
+After enabling Wikis in GitHub repository settings, publish the local wiki pages with:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\publish-wiki.ps1
+```
+
 ## License
 
 MIT
