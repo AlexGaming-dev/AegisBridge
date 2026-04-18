@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="AegisBridge OS Guard - professional endpoint readiness and security platform."
+      content="AegisBridge OS Guard — professional endpoint readiness and security platform for Windows."
     />
-    <title>AegisBridge OS Guard | About</title>
+    <title>AegisBridge OS Guard</title>
     <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -28,27 +34,26 @@
 
       <section class="hero-content container">
         <img class="logo" src="assets/logo.svg" alt="AegisBridge OS Guard logo" />
-        <p class="kicker">Windows Readiness and Security Operations</p>
+        <p class="kicker">Windows Endpoint Security &amp; Readiness</p>
         <h1>Modern endpoint assurance without hidden behavior.</h1>
         <p class="lead">
           AegisBridge OS Guard extends device service life through official upgrade guidance,
           transparent endpoint security controls, and low-friction background operations.
         </p>
         <div class="hero-actions">
-          <a href="docs/index.html" class="btn primary">Read Documentation</a>
-          <a href="download/index.html" class="btn ghost">Download</a>
+          <a href="download/index.html" class="btn primary">Download</a>
+          <a href="docs/index.html" class="btn ghost">Documentation</a>
         </div>
       </section>
     </header>
 
     <main class="container section-stack">
-      <section class="grid-two">
+      <div class="grid-two">
         <article class="card reveal">
-          <h2>Platform Name</h2>
-          <p><strong>AegisBridge OS Guard</strong></p>
+          <h2>Platform</h2>
           <p>
-            "Aegis" signals protection, "Bridge" represents lifecycle extension, and
-            "OS Guard" defines continuous operational defense.
+            <strong>AegisBridge OS Guard</strong> — "Aegis" signals protection, "Bridge"
+            represents lifecycle extension, and "OS Guard" defines continuous operational defense.
           </p>
         </article>
         <article class="card reveal">
@@ -58,10 +63,10 @@
             migrations and measurable endpoint performance.
           </p>
         </article>
-      </section>
+      </div>
 
       <section class="section reveal">
-        <h2>Core Product Pillars</h2>
+        <div class="section-label">Core Product Pillars</div>
         <div class="module-grid">
           <article class="module">
             <h3>Readiness Intelligence</h3>
@@ -88,20 +93,32 @@
       </section>
 
       <section class="section reveal">
-        <h2>Compliance Baseline</h2>
-        <div class="card warning">
+        <div class="section-label">Compliance Baseline</div>
+        <article class="card warning">
+          <h3>Deployment Standards</h3>
           <p>
             AegisBridge OS Guard does not include or document hardware requirement bypass
             methods. Deployment guidance uses vendor-supported and auditable operating
-            procedures.
+            procedures only.
           </p>
-        </div>
+        </article>
       </section>
     </main>
 
-    <footer class="container footer">
-      <p>AegisBridge OS Guard | About</p>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a class="footer-brand" href="index.html">AegisBridge OS Guard</a>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="docs/index.html">Documentation</a>
+          <a href="download/index.html">Download</a>
+          <a href="https://github.com/AlexGaming-Dev/AegisBridge">GitHub</a>
+          <a href="https://github.com/AlexGaming-Dev/AegisBridge/wiki">Wiki</a>
+          <a href="https://github.com/AlexGaming-Dev/AegisBridge/issues">Issues</a>
+        </nav>
+        <p class="footer-meta">&copy; AegisBridge OS Guard contributors</p>
+      </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="AegisBridge OS Guard desktop application surface." />
-    <title>AegisBridge OS Guard | App</title>
+    <title>AegisBridge OS Guard</title>
     <link rel="icon" href="../../assets/icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../../styles.css" />
   </head>
   <body>
@@ -16,23 +22,19 @@
         <img class="logo app-logo" src="../../assets/logo.svg" alt="AegisBridge OS Guard logo" />
         <p class="kicker">Desktop Control Surface</p>
         <h1>Operational oversight for readiness and endpoint protection.</h1>
-        <p class="lead">
-          This desktop surface summarizes the current posture of the platform using the same
-          visual language as the public documentation.
-        </p>
       </section>
     </header>
 
-     <main class="container app-layout app-shell-panel">
+    <main class="container app-layout app-shell-panel">
       <aside class="card app-side">
         <h2>Platform Status</h2>
         <div class="status-pill">Agent Healthy</div>
         <p class="app-note">
-          Background services are active and policy control is available.
+          Background services are active. Policy control is available.
         </p>
-        
+
         <div class="deployment-controls">
-          <h3>Actions</h3>
+          <div class="section-label">Actions</div>
           <button id="btn-diagnostics" class="action-btn" type="button">
             Run Diagnostics
           </button>
@@ -41,7 +43,7 @@
       </aside>
 
       <section class="card app-main">
-        <h2>Official Windows 11 Baseline</h2>
+        <div class="section-label">Windows 11 Baseline</div>
         <div class="stats-grid baseline-grid">
           <article>
             <h3>TPM</h3>
@@ -52,16 +54,16 @@
             <p id="metric-secure-boot">--</p>
           </article>
           <article>
-            <h3>Memory</h3>
+            <h3>Min. Memory</h3>
             <p>4 GB</p>
           </article>
           <article>
-            <h3>Storage</h3>
+            <h3>Min. Storage</h3>
             <p>64 GB</p>
           </article>
         </div>
 
-        <h2>Live Security Snapshot</h2>
+        <div class="section-label">Live Security Snapshot</div>
         <div class="stats-grid">
           <article>
             <h3>Endpoints Online</h3>
@@ -86,7 +88,6 @@
         </div>
       </section>
     </main>
-
 
     <script src="../../script.js"></script>
     <script src="./app.js"></script>
