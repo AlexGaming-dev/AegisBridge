@@ -1,0 +1,34 @@
+<svg width="1080" height="360" viewBox="0 0 1080 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AegisBridge OS Guard Logo</title>
+  <desc id="desc">Schildsymbol mit Brueckenlinie und Wortmarke AegisBridge OS Guard.</desc>
+
+  <defs>
+    <linearGradient id="shield" x1="90" y1="30" x2="210" y2="210" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C6E8C" />
+      <stop offset="1" stop-color="#0B2E3C" />
+    </linearGradient>
+    <linearGradient id="bridge" x1="80" y1="180" x2="220" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9BCDDC" />
+      <stop offset="1" stop-color="#E7F3F7" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="360" rx="22" fill="#F6F2EA"/>
+
+  <g transform="translate(36,36)">
+    <path d="M144 8L244 46V130C244 201 203 249 144 280C85 249 44 201 44 130V46L144 8Z" fill="url(#shield)"/>
+    <path d="M78 168C93 140 119 122 144 122C169 122 195 140 210 168" stroke="url(#bridge)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M102 190H186" stroke="#E7F3F7" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="144" cy="94" r="26" fill="#E7F3F7"/>
+    <path d="M136 93L143 100L156 86" stroke="#1C6E8C" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(320,112)">
+    <text x="0" y="56" fill="#0F2B36" font-family="Segoe UI, Arial, sans-serif" font-size="76" font-weight="800" letter-spacing="0.5">
+      AegisBridge
+    </text>
+    <text x="2" y="108" fill="#1C6E8C" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="700" letter-spacing="6.2">
+      OS GUARD
+    </text>
+  </g>
+</svg>

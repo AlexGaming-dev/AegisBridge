@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Download resources and setup channels for AegisBridge OS Guard."
+    />
+    <title>AegisBridge OS Guard | Download</title>
+    <link rel="icon" href="../assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="subpage-header">
+      <nav class="top-nav container">
+        <a class="brand" href="../index.html">
+          <img src="../assets/icon.svg" alt="AegisBridge icon" />
+          <span>AegisBridge OS Guard</span>
+        </a>
+        <div class="nav-links">
+          <a href="../index.html">About</a>
+          <a href="../docs/index.html">Docs</a>
+          <a href="index.html" class="active">Download</a>
+        </div>
+      </nav>
+      <div class="container">
+        <p class="kicker">Distribution</p>
+        <h1>Installer packages and deployment channels.</h1>
+      </div>
+    </header>
+
+    <main class="container section-stack">
+      <section class="card reveal">
+        <h2>Windows Desktop App</h2>
+        <p>
+          End users can download the installer directly. No source code checkout is
+          required.
+        </p>
+        <div class="download-cta">
+          <a class="btn primary" href="files/AegisBridge-OS-Guard-Setup.exe" download>
+            Download Windows Installer (.exe)
+          </a>
+        </div>
+        <p><strong>File:</strong> AegisBridge-OS-Guard-Setup.exe</p>
+      </section>
+
+      <section class="card reveal">
+        <h2>Windows Installer Media Path</h2>
+        <p>
+          If your organization provides official installer media, store it in the following
+          folder:
+        </p>
+        <p><code>assets/windows-installer/11/installer.iso</code></p>
+        <p>
+          The media file itself is not included in this repository.
+        </p>
+      </section>
+
+      <section class="card reveal">
+        <h2>Internal Build Command</h2>
+        <p>This command is for maintainers, not for end users:</p>
+        <p><code>npm run build:win</code></p>
+      </section>
+
+      <section class="card reveal">
+        <h2>CLI Validation Example</h2>
+        <p>From the installer folder, run directory validation:</p>
+        <p><code>dir</code></p>
+      </section>
+
+      <section class="card warning reveal">
+        <h2>Unsupported Command Workflows</h2>
+        <p>
+          Commands intended to bypass platform security or hardware requirements are
+          intentionally excluded from this documentation.
+        </p>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>AegisBridge OS Guard | Download</p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+{
+  "name": "aegisbridge-os-guard",
+  "version": "1.0.0",
+  "description": "Enterprise-ready Electron desktop control surface for endpoint monitoring and diagnostics workflows.",
+  "main": "src/main/main.js",
+  "author": "Alexander Dennhoven",
+  "license": "MIT",
+  "private": false,
+  "homepage": "https://github.com/alexanderdennhoven/aegisbridge-os-guard",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexanderdennhoven/aegisbridge-os-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexanderdennhoven/aegisbridge-os-guard/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "electron",
+    "windows",
+    "monitoring",
+    "diagnostics",
+    "security"
+  ],
+  "scripts": {
+    "start": "electron .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build:win": "electron-builder --win nsis",
+    "build:win:signed": "electron-builder --win nsis -c.win.signAndEditExecutable=true",
+    "build:win:embed-icon": "electron-builder --win nsis -c.win.signAndEditExecutable=true",
+    "build:win:portable": "electron-builder --win portable",
+    "build:dir": "electron-builder --dir",
+    "release:local": "npm run lint && npm run build:win"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "electron": "^37.1.0",
+    "electron-builder": "^25.1.8",
+    "eslint": "^9.26.0",
+    "globals": "^16.0.0",
+    "rcedit": "^4.0.1"
+  },
+  "build": {
+    "afterPack": "build/after-pack.js",
+    "appId": "com.aegisbridge.osguard",
+    "productName": "AegisBridge OS Guard",
+    "executableName": "AegisBridgeOSGuard",
+    "files": [
+      "src/**/*",
+      "styles.css",
+      "script.js",
+      "assets/**/*",
+      "!**/*.map"
+    ],
+    "extraResources": [
+      {
+        "from": "assets/icon.ico",
+        "to": "assets/icon.ico"
+      }
+    ],
+    "icon": "assets/icon.ico",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "legalTrademarks": "AegisBridge OS Guard",
+      "verifyUpdateCodeSignature": true,
+      "requestedExecutionLevel": "asInvoker",
+      "signtoolOptions": {
+        "signingHashAlgorithms": [
+          "sha256"
+        ],
+        "timeStampServer": "http://timestamp.digicert.com",
+        "rfc3161TimeStampServer": "http://timestamp.digicert.com",
+        "publisherName": [
+          "OXYUM x alexgamingdev"
+        ]
+      },
+      "icon": "assets/icon.ico",
+      "signAndEditExecutable": false,
+      "target": [
+        "nsis"
+      ],
+      "artifactName": "AegisBridge-OS-Guard-${version}-Setup.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "assets/icon.ico",
+      "uninstallerIcon": "assets/icon.ico",
+      "installerHeaderIcon": "assets/icon.ico",
+      "createDesktopShortcut": "always",
+      "shortcutName": "AegisBridge OS Guard"
+    }
+  }
+}
